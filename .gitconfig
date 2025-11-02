@@ -211,3 +211,16 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+[push]
+	default = simple
+[user]
+	name = Matthew Gerstman
+	email = matthew.gerstman@gmail.com
+[credential]
+	helper = store
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
