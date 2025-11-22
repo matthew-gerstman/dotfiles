@@ -18,13 +18,6 @@ alias got='git'
 # Reload shell configuration
 alias reload='source ~/.zshrc'
 
-# Smart directory navigation (cd learns your frequent directories)
-eval "$(zoxide init zsh)"
-alias cd='z'
-
-# fzf for fuzzy finding and better Ctrl+R history search
-source <(fzf --zsh)
-
 # bun completions
 [ -s "/Users/matthew/.bun/_bun" ] && source "/Users/matthew/.bun/_bun"
 
